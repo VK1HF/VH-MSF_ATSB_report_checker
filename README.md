@@ -5,7 +5,9 @@ ATSB report URL : https://www.atsb.gov.au/publications/investigation_reports/202
 
 As with anything aviation - it takes forever to find out what happened. I wrote this python script to have my rPi run it as a cron job each day to check if the web page has changed - i.e. the final report has been release etc.  If there are changes the script sends a notification via PUSHOVER (https://pushover.net/) .
 
-Use this in your crontab : "0 8 * * * ~/scripts/VH-MSF/vh-msf_checker.py"
+The python script is in the file : https://github.com/VK1HF/VH-MSF_ATSB_report_checker/blob/main/vh-msf_checker.py
+  >> Just download this to your RaspberryPi or similar.
+  >> Use this in your crontab : "0 8 * * * ~/scripts/VH-MSF/vh-msf_checker.py"
 
 This crontab will run the checker at 8am each day. If the day of the week is Monday you should get a pushoever "check_success" notification just so you know it is running ok.
 
